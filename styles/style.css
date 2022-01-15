@@ -1,0 +1,123 @@
+/*------------------------------------*\
+  #Fonts
+\*------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*------------------------------------*\
+  #Common Styles
+\*------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+}
+
+:root{
+    --button-color:#E02C6D;
+    --font-color:#3A3A3A;
+}
+
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+.btn{
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--button-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--button-color);
+}
+
+/*------------------------------------*\
+  #Header Section Styles
+\*------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.hidden{
+    visibility: hidden;
+}
+.logo {
+    display: inline-block;
+}
+
+.logo a{
+    color: var(--font-color);
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    color: var(--font-color);
+}
+
+
+/*------------------------------------*\
+  #Slider Section Styles
+\*------------------------------------*/
+.slider{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.slider .content{
+    width: 60%;
+    color: var(--font-color);
+}
+.slider .content h2{
+    font-size: 52px;
+    line-height: 70px;
+}
+.slider .content p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    width: 500px
+}
+.slider-btn{
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.fa-arrow-right{
+    transition: all .5s;
+    margin-left: 5px;
+}
+.slider-btn:hover .fa-arrow-right{
+    transform: rotate(360deg);
+}
+.slider .image{
+    width: 40%;
+}
+.slider .image img{
+    width: 100%;
+    background-image: url(../images/Circledesign.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
