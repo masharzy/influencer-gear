@@ -17,33 +17,40 @@ body {
     color: var(--font-color);
 }
 
-:root{
-    --button-color:#E02C6D;
-    --font-color:#3A3A3A;
+:root {
+    --button-color: #E02C6D;
+    --font-color: #3A3A3A;
 }
 
 .container {
-    width: 1270px;
+    width: 1140px;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
 }
-.btn{
+
+.btn {
     background-color: var(--button-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: .5s;
+    transition: .4s;
     border: 2px solid var(--button-color);
     font-size: 15px;
     font-weight: 600;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: transparent;
     color: var(--button-color);
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
 }
 
 /*------------------------------------*\
@@ -55,14 +62,16 @@ a {
     align-items: center;
     height: 100px;
 }
-.hidden{
+
+.hidden {
     visibility: hidden;
 }
+
 .logo {
     display: inline-block;
 }
 
-.logo a{
+.logo a {
     color: var(--font-color);
 }
 
@@ -81,43 +90,190 @@ a {
 /*------------------------------------*\
   #Slider Section Styles
 \*------------------------------------*/
-.slider{
+.slider {
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
-.slider .content{
+
+.slider .content {
     width: 60%;
     color: var(--font-color);
 }
-.slider .content h2{
+
+.slider .content h2 {
     font-size: 52px;
     line-height: 70px;
 }
-.slider .content p{
+
+.slider .content p {
     font-size: 16px;
     line-height: 24px;
     margin-top: 10px;
     width: 500px
 }
-.slider-btn{
+
+.slider-btn {
     display: inline-block;
     border-radius: 50px;
     margin-top: 20px;
 }
-.fa-arrow-right{
-    transition: all .5s;
+
+.fa-arrow-right {
+    transition: all .4s;
     margin-left: 5px;
 }
-.slider-btn:hover .fa-arrow-right{
+
+.slider-btn:hover .fa-arrow-right {
     transform: rotate(360deg);
 }
-.slider .image{
+
+.slider .image {
     width: 40%;
 }
-.slider .image img{
+
+.slider .image img {
     width: 100%;
     background-image: url(../images/Circledesign.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+/*------------------------------------*\
+  #Popular Collections Section Styles
+\*------------------------------------*/
+.collection-section {
+    margin-top: 100px;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 30px;
+    margin-top: 50px;
+}
+
+.collection {
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-name {
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 16px;
+    color: #18191F;
+    margin-bottom: 5px;
+}
+
+.collection-price {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.rating {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.rating i {
+    color: #FB8200;
+}
+
+.description {
+    color: #787885;
+    font-weight: 700;
+}
+
+.see-more {
+    color: var(--button-color);
+    float: right;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*------------------------------------*\
+  #Bonus Section Styles
+\*------------------------------------*/
+.bonus-section {
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.bonus-section .image {
+    width: 40%;
+}
+
+.bonus-section img {
+    width: 100%;
+}
+
+.bonus-section .content {
+    width: 60%;
+    margin-left: 50px;
+}
+
+.bonus-section .content h1 {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.bonus-section .content p {
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.join-btn {
+    display: inline-block;
+}
+
+.join-btn:hover .fa-arrow-right {
+    transform: rotate(360deg);
+}
+
+
+/*------------------------------------*\
+  #Footer Section Styles
+\*------------------------------------*/
+.footer {
+    background: #0A0826;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.footer h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer .icon {
+    color: #fff;
+    background-color: #22213C;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    transition: .5s;
+}
+.footer .icon:hover{
+    transform: rotate(360deg);
 }

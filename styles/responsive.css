@@ -1,43 +1,102 @@
 @media only screen and (max-width:1275px) {
     .container {
-        width: 970px;
+        width: 950px;
     }
-    .slider .content h2{
+
+    .slider .content h2 {
         font-size: 40px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media only screen and (max-width:975px) {
+@media only screen and (max-width:990px) {
     .container {
         width: 750px;
     }
-    .slider .content h2{
+
+    .slider .content h2 {
         font-size: 30px;
         line-height: 35px;
     }
-    .slider .content p{
+
+    .slider .content p {
         font-size: 14px;
         width: 400px;
     }
+
+    .bonus-section .content h1 {
+        line-height: 28px;
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .bonus-section .content p {
+        line-height: 22px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .join-btn {
+        display: inline-block;
+        font-size: 12px;
+        padding: 9px;
+    }
 }
 
-@media only screen and (max-width:755px) {
+@media only screen and (max-width:770px) {
     .container {
         width: 650px;
     }
-    .slider .content h2{
+
+    .slider .content h2 {
         font-size: 25px;
     }
-    .slider .content p{
+
+    .slider .content p {
         font-size: 14px;
         width: 350px;
     }
-    .slider-btn{
+
+    .slider-btn {
         font-size: 12px;
     }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bonus-section {
+        flex-direction: column-reverse;
+    }
+    .bonus-section .content{
+        margin-left: 0px;
+    }
+    .bonus-section .content h1 {
+        line-height: 35px;
+        margin-bottom: 8px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .bonus-section .content p {
+        line-height: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .join-btn {
+        display: block;
+        font-size: 12px;
+        padding: 9px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
 }
 
-@media only screen and (max-width:655px) {
+@media only screen and (max-width:670px) {
     .container {
         width: 80%;
     }
@@ -64,48 +123,70 @@
     .hidden {
         visibility: visible;
     }
-    .slider{
+
+    .slider {
         flex-direction: column-reverse;
+        justify-content: center;
     }
-    .slider .content h2{
-        font-size: 25px;
+
+    .slider .content h2 {
+        font-size: 22px;
         text-align: center;
         line-height: 30px;
     }
-    .slider .content p{
+
+    .slider .content p {
         font-size: 13px;
         text-align: center;
         width: 100%;
     }
-    .slider .content .slider-btn{
+
+    .slider .content .slider-btn {
         display: flex;
         justify-content: center;
     }
+    .bonus-section .content h1 {
+        line-height: 35px;
+        margin-bottom: 8px;
+        font-size: 19px;
+        text-align: center;
+    }
 }
-@media only screen and (max-width:498px) {
-    .slider .content h2{
+
+@media only screen and (max-width:500px) {
+    .slider .content h2 {
         font-size: 18px;
     }
-    .slider .content p{
+
+    .slider .content p {
         font-size: 12px;
     }
+    .bonus-section .content h1 {
+        line-height: 30px;
+        font-size: 18px;
+    }
 }
+
 @media only screen and (max-width:380px) {
-    .logo h2 a{
+    .logo h2 a {
         font-size: 15px;
     }
-    .container{
-        width: 100%;
+
+    .container {
+        width: 90%;
     }
-    .slider .content h2{
+
+    .slider .content h2 {
         font-size: 15px;
     }
-    .slider .content p{
+
+    .slider .content p {
         font-size: 10px;
     }
 }
+
 @media only screen and (max-width:230px) {
-    .logo{
+    .logo {
         flex-direction: column;
     }
 }
